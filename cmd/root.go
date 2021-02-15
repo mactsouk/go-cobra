@@ -1,12 +1,13 @@
 /*
 Copyright © 2021 Mihalis Tsoukalos <mihalistsoukalos@gmail.com>
-
 */
+
 package cmd
 
 import (
 	"fmt"
 	"os"
+
 	"github.com/spf13/cobra"
 
 	homedir "github.com/mitchellh/go-homedir"
