@@ -12,8 +12,9 @@ import (
 
 // threeCmd represents the three command
 var threeCmd = &cobra.Command{
-	Use:   "three",
-	Short: "Command three",
+	Use:     "three",
+	Aliases: []string{"cmd3"},
+	Short:   "Command three",
 	Long: `A longer description that spans multiple lines
 	for command three.`,
 	Run: func(cmd *cobra.Command, args []string) {

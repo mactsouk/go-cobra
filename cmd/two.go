@@ -12,9 +12,10 @@ import (
 
 // twoCmd represents the two command
 var twoCmd = &cobra.Command{
-	Use:   "two",
-	Short: "Command two short message",
-	Long:  `This is the long description of command two.`,
+	Use:     "two",
+	Aliases: []string{"cmd2"},
+	Short:   "Command two short message",
+	Long:    `This is the long description of command two.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("two called")
 		username, _ := cmd.Flags().GetString("username")

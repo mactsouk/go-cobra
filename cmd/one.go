@@ -13,9 +13,10 @@ import (
 
 // oneCmd represents the one command
 var oneCmd = &cobra.Command{
-	Use:   "one",
-	Short: "Command one",
-	Long:  `This is the description for one.`,
+	Use:     "one",
+	Aliases: []string{"cmd1"},
+	Short:   "Command one",
+	Long:    `This is the description for one.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("one called")
 

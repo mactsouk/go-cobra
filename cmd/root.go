@@ -26,7 +26,7 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.PersistentFlags().StringP("directory", "d", "/tmp", "Directory to be used.")
+	rootCmd.PersistentFlags().StringP("directory", "d", "/tmp", "Path to use.")
 	rootCmd.PersistentFlags().Uint("depth", 2, "Depth of search.")
 
 	viper.BindPFlag("directory", rootCmd.PersistentFlags().Lookup("directory"))
