@@ -24,5 +24,4 @@ var threeCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(threeCmd)
-
 }
